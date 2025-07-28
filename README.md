@@ -1,49 +1,76 @@
-# Group-2--GCOs--PLP2
+Mood Tracker CLI App
+Group-2 – GCOs – PLP2
 
-# Mood Tracker CLI App
+A command-line mood and journaling tracker developed as part of the Peer Learning Project (PLP-2) for BSE Year 1, Trimester 2 at the African Leadership University (ALU). This application enables users to track their emotional well-being by logging daily moods and journal entries, offering helpful insights into mental health trends over time.
 
-A command-line mood and journaling tracker developed as part of the Peer Learning Project (PLP-2) for BSE Year 1 Trimester 2 at ALU. This tool helps users monitor their emotional well-being through daily mood logging and journaling, offering simple insights into mental health patterns over time.
+📌 Features
+Log Today’s Mood
 
-## Features included in the app
+Select your current mood (e.g., happy, sad, anxious, calm)
 
-1. **Log Today’s Mood**  
-   Users can select their current mood (happy, sad, anxious, calm). The selection is saved with a timestamp to a SQLite database.
+Mood is saved with a timestamp in a SQLite database
 
-2. **Write Journal Entry**  
-   Users can reflect on their mood with a prompt or write freely. The entry is stored and linked to the selected mood.
+Write Journal Entry
 
-3. **View Mood History**  
-   Displays all past moods and journal entries in chronological order.
+Reflect on your day using a guided prompt or free-write
 
-4. **View Insights**  
-   Analyzes frequency of moods (e.g., "You felt calm 4 days in a row").
+Journal entries are linked to the logged mood and stored securely
 
-5. **Menu Navigation with Error Handling**  
-   A clean menu interface using numeric selection and validation for invalid inputs.
+View Mood History
 
+Review all past moods and journal entries
 
+Displays data in chronological order
 
-## Prototype Description
+View Insights
 
-The prototype is a menu-driven Python CLI app.
+Get automatic analysis of mood trends
 
-### How users will interact with it:
+E.g., “You felt calm 4 days in a row”
 
-- Launch `app.py`
-- Choose from menu options (1–5)
-- Each selection leads to a clear prompt
-- Data is stored in `mood_tracker.db`
-- App loops until the user exits
+Menu Navigation with Error Handling
 
+Intuitive CLI menu with numbered options
 
+Validates user input and handles errors gracefully
 
-## User Journey Diagram
+🚀 Getting Started
+Prerequisites
+Python 3.x installed on your machine
+
+SQLite (comes bundled with Python’s sqlite3 module)
+
+Installation
+1. Clone the repository:
+
+git clone https://github.com/your-username/mood-tracker-cli.git
+cd mood-tracker-cli
+
+2. Install any required dependencies (if applicable):
+
+pip install -r requirements.txt
+
+Run the App
+
+python3 app.py
+
+🧭 User Flow
 
 Start Program
-↓
-Display Menu
-├─ 1 → Log Mood → Save to DB
-├─ 2 → Write Journal → Save to DB
-├─ 3 → View History → Display from DB
-├─ 4 → View Insights → Analyze + Display
-└─ 5 → Exit
+     ↓
+Display Main Menu
+ ├─ 1. Log Mood        → Save mood with timestamp
+ ├─ 2. Write Journal   → Save entry linked to mood
+ ├─ 3. View History    → Show all entries chronologically
+ ├─ 4. View Insights   → Analyze mood trends
+ └─ 5. Exit            → End session
+
+📂 Data Storage
+All mood logs and journal entries are stored locally using SQLite (mood_tracker.db), ensuring offline functionality and data privacy.
+
+🤝 Contributing
+This project was created collaboratively by Group 2 as part of the PLP-2 Coding Lab. Contributions for future improvements are welcome via pull requests.
+
+📧 Contact
+For questions or suggestions, feel free to reach out to any member of Group 2 or your PLP facilitator.
+
