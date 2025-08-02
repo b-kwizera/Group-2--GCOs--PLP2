@@ -43,8 +43,7 @@ SQLite (comes bundled with Python’s sqlite3 module)
 Installation
 1. Clone the repository:
 
-git clone https://github.com/your-username/mood-tracker-cli.git
-cd mood-tracker-cli
+git clone https://github.com/b-kwizera/Group-2--GCOs--PLP2
 
 2. Install any required dependencies (if applicable):
 
